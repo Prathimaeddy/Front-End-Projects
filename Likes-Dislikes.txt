@@ -1,0 +1,72 @@
+Likes-Dislikes
+------------------
+<!doctype html>
+<html>
+<head>
+	<title> bs local methods</title>
+	<link rel="stylesheet"  href="..\MDB\css\bootsrap.css">
+	<link rel="stylesheet"  href="..\MDB\css\mdb.css">
+	<link rel="stylesheet" href="..\MDB\css\style.css">
+	<link rel="stylesheet" href="..\fontawesome\fa\css\all.css">
+</head>
+	<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-8 m-auto">
+				<div class="card">
+					<div class="card-header bg-primary text-white text-center">
+						<h1>Js Likes App</h1>
+					</div>
+					<div class="card-body bg-light">
+						<div class="row">
+							<div class="col-md-5 text-center">
+								<button class="btn btn-block btn-success" id="likes-btn">Likes <i class="fa-regular fa-thumbs-up"></i></button>
+								<h6 class="mt-3" id="likes-display"></h6>
+							</div>
+							<div class="col-md-5 text-center">
+								<button class="btn btn-block btn-danger" id="dislikes-btn">Dislikes <i class="fa-regular fa-thumbs-down"></i></button>
+								<h6 class="mt-3" id="dislikes-display"></h6>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-white bg-primary text-center">
+						<h1>Total:-<span id="total-display"></span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script >
+let likesDisplay=document.getElementById('likes-display');
+let dislikesDisplay=document.getElementById('dislikes-display');
+let totalDisplay=document.getElementById('total-display');
+let likesBtn=document.getElementById('likes-btn');
+let dislikesBtn=document.getElementById('dislikes-btn');
+
+
+let likes=0;
+let disLikes=0;
+let total=0;
+
+likesDisplay.innerText=likes;
+dislikesDisplay.innerText=disLikes;
+totalDisplay.innerText=total;
+
+
+likesBtn.addEventListener('click',function()
+{
+	likes++;
+	likesDisplay.innerText=likes;
+	total++;
+	totalDisplay.innerText=total;
+})
+
+dislikesBtn.addEventListener('click',function()
+{
+	disLikes++;
+	dislikesDisplay.innerText=disLikes;
+	total++;
+	totalDisplay.innerText=total;
+})
+</script>
+</body>

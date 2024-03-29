@@ -1,0 +1,93 @@
+				Registration-Form
+				--------------------
+registration-form.html
+----------------------
+<!doctype html>
+<html>
+<head>
+	<title> REGISTRATION FORM</title>
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<div class="registration-form">
+		<h1>REGISTRATION FORM</h1>
+		<form action="#"method="post"><h1>
+			<p>First Name</p>
+			<input type="text"name="firstname" placeholder="First Name">
+			<p>Last Name</p>
+			<input type="text" name="lastname" placeholder="Last Name">
+			<p>Email</p>
+			<input type="email" name="email" placeholder="Email">
+			<p>Password</p>
+			<input type="password" name="password"placeholder="password">
+			<button type="submit">Register Here</button>
+		</h1>
+	</form>
+</div>
+</body>
+
+Style.css
+----------
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+body
+{
+	background: url("https://cdn.wallpapersafari.com/96/86/av53FT.jpg");
+	background-size: cover;
+	color: #fff;
+
+}
+.registration-form
+{
+	position: absolute;
+	top: 53%;
+	left: 49%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+
+}
+.registration-form h1
+{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px 0;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+}
+.registration-form p{
+	font-size: 20px;
+	margin: 15px 0;
+	text-align: center;
+	 
+}
+.registration-form input{
+	font-size: 16px;
+	padding: 15px 10px;
+	width:100%;
+	border: 0;
+	border-radius:5px ;
+	outline: none;
+
+}
+.registration-form button{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15 px;
+	width: 40%;
+	border-radius: 4px;
+	background-color: #fff;
+
+}
+.registration-form button:hover{
+	color: black;
+}
+
+
+
+
